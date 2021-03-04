@@ -1,0 +1,247 @@
+/* --БАЗОВОЙ СБРОС-- */
+:root {
+    --main-font: "Roboto", sans-serif;
+    --secondary-font: "Raleway", sans-serif;
+    --accent-color:#2196f3;
+}
+body {
+  font-family: var(--main-font);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}
+
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+.address {
+  font-style: normal;
+}
+  
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/* -- END БАЗОВОЙ СБРОС-- */
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/*---------HEADER--------*/
+.header { 
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+} 
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: #212121;
+}
+
+.navigation-item:not(:last-child) {
+  margin-right: 50px;
+}
+.active-link{
+   color: #2196f3; 
+}
+.navigation-link:hover,
+.navigation-link:focus {
+  color: #2196f3;
+}
+/*--------- END HEADER--------*/
+
+
+/*---------HERO--------*/
+.modal-btn {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  cursor: pointer;
+
+  color: #ffffff;
+  background: #2196f3;
+  rgba(0, 0, 0, 0.15);
+}
+.hero-title{
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  color: #FFFFFF;
+  background: #2F303A;
+}
+/*--------- END HERO--------*/
+
+/*---------advantages--------*/
+.titles-list{
+font-weight: bold;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #212121;
+}
+.titles-list-description{
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+
+}
+/*---------END advantages--------*/
+
+/*---------ABOUT--------*/
+
+/*--------- END ABOUT--------*/
+
+/*---------TEAM--------*/
+.team-title{
+  font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+
+color: #212121;
+}
+.team-title-description{
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+/*--------- END TEAM--------*/
+
+/*---------FOOTER--------*/
+
+/*--------- END FOOTER--------*/
+
+.logo{
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: #2196F3;
+
+  margin-right: 93px;
+}
+.logo-light-theme{
+  color: #212121;
+}
+.logo-dark-theme{
+  color: #FFFFFF;
+}
+.contact-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+
+  margin-left: auto;
+  margin-right: 50px;
+
+}
+.contact-link:hover,
+.contact-link:focus {
+  color: #2196f3;
+}
+
+.tel-link { 
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: #757575;  
+}
+
+.tel-link:hover,
+.tel-link:focus { 
+
+  color: #2196f3;
+}
+
+.title{
+font-weight: bold;
+font-size: 36px;
+line-height: 1.17;
+
+color: #212121;
+}
+/*-------PORTFOLIO---------*/
+/*---------FILTER--------*/
+.filter-btn{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  color: #FFFFFF;
+  background: #2196F3;
+  cursor: pointer;
+}
+/*--------- END FILTER--------*/
+/*--------- MY WORK--------*/
+
+/*--------- END MY WORK--------*/
+
+/*-------END PORTFOLIO---------*/
