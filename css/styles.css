@@ -59,6 +59,15 @@ img {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: var(--saction-pt);
+  padding-bottom: var(--saction-pb);
+  /* text-align: center; */
+
+}
+
+.section {
+  /* padding-top: var(--saction-pt); */
+  /* padding-bottom: var(--saction-pb); */
 }
 /*---------HEADER--------*/
 .header { 
@@ -105,11 +114,13 @@ img {
 
 /*---------HERO--------*/
 .hero {
-  padding-bottom: var(--saction-pb) ;
+  padding-top: 200px;
+  padding-bottom: 200px; 
   /* height: 600px; */
   background: #2F303A;
-  text-align: center;
+  text-align: center; 
 }
+
 .modal-btn {
   font-weight: bold;
   font-size: 16px;
@@ -133,34 +144,25 @@ img {
 
   color: #FFFFFF;
   /* background: #2F303A; */
-
-  /* padding-top: 200px; */
-  /* padding-bottom: 200px; */
-  padding-left: 452px;
-  padding-right: 452px;
+  
   margin-bottom: 30px;
-  width: 696px;
-  height: 120px;
-
+  width: 696px; 
+  /* height: 120px;   */
+  margin-left: auto;
+  margin-right: auto;
 }
 /*--------- END HERO--------*/
 
 /*---------features--------*/
 
-
-.features {
-  padding-top: var(--saction-pt);
-  padding-bottom: var(--saction-pb);
-}
-
 .features-list {
   display: flex;
-  /* margin-left: -30px; */
+  margin-left: -30px; 
   margin-top: -30px;
   flex-basis: calc(100%/4 - 30px);
 }
 
-.about-list-item {
+.features-list-item {
   margin-left: 30px;
   margin-top: 30px;
 }
@@ -188,11 +190,6 @@ img {
 /*---------END features--------*/
 
 /*---------ABOUT--------*/
-.about {
-  padding-top: var(--saction-pt);
-  padding-bottom: var(--saction-pb);
-}
-
 .about-list {
   display: flex;
   margin-left: -30px;
@@ -208,12 +205,6 @@ img {
 /*--------- END ABOUT--------*/
 
 /*---------TEAM--------*/
-.team {
-  background-color: #F5F4FA;
-  padding-top: var(--saction-pt);
-  padding-bottom: var(--saction-pb) ;
-} 
-
 .team-title{
   font-style: normal;
   font-size: 16px;
@@ -224,6 +215,7 @@ img {
   color: #212121;
 
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .team-list {
@@ -238,7 +230,7 @@ img {
   margin-top: 30px;
 }
 
-.team-contaner {
+.team-container {
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -250,11 +242,38 @@ img {
   letter-spacing: 0.03em;
 
   color: #757575;
+  text-align: center;
 }
 /*--------- END TEAM--------*/
 
 /*---------FOOTER--------*/
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #2F303A;
+}
 
+.contact-address {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  /* margin-top: 20px; */
+  color: #FFFFFF;
+
+  margin-left: auto;
+  margin-right: 50px;
+  margin-bottom: 9px;
+}
+
+.contact-address:hover,
+.contact-address:focus {
+  color: #2196f3;
+}
+
+.logo-footer {
+  margin-bottom: 20px;
+}
 /*--------- END FOOTER--------*/
 
 .logo{
@@ -267,13 +286,15 @@ img {
   color: #2196F3;
 
   margin-right: 93px;
+  /* margin-bottom: 20px;  */
 }
 .logo-light-theme{
   color: #212121;
 }
 .logo-dark-theme{
-  color: #FFFFFF;
+  color: #FFFFFF; 
 }
+
 .contact-link {
   font-weight: 500;
   font-size: 14px;
@@ -284,6 +305,7 @@ img {
 
   margin-left: auto;
   margin-right: 50px;
+  margin-bottom: 9px;
 
 }
 .contact-link:hover,
@@ -297,7 +319,10 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  color: #757575;  
+  color: #757575; 
+
+  margin-right: 50px;
+  margin-bottom: 9px; 
 }
 
 .tel-link:hover,
@@ -314,19 +339,46 @@ line-height: 1.17;
 color: #212121;
 
 margin-bottom: 50px;
+text-align: center;
 }
 /*-------PORTFOLIO---------*/
 /*---------FILTERS--------*/
-.filter-btn{
+.filters {
+  margin-bottom: 30px; 
+}
+
+.filters-box {
+  padding-top: 6px;
+  padding-bottom: 22px;
+  /* margin-bottom: 30px; */
+  /* text-align: center; */
+}
+
+.filters-list {
+  display: flex;
+  margin-left: -30px;
+  flex-basis: calc(100%/5 - 30px);
+  justify-content: center;
+}
+.filters-list-item {
+  margin-left: 30px;
+}
+
+.filters-btn{
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
 
   color: #212121;
+
+   min-width: 73px;
+  /* height: 50px; */
+  border-radius: 4px;
+  padding: 6px 22px;
 }
-.filter-btn:hover,
-.filter-btn:focus {
+.filters-btn:hover,
+.filters-btn:focus {
   color: #FFFFFF;
   background: #2196F3;
   cursor: pointer;
@@ -353,6 +405,11 @@ margin-bottom: 50px;
 
 .project-title {
   margin-bottom: 4px;
+  color: #212121;
+}
+
+.project-title-description {
+  color: #757575;
 }
 
 /*--------- END OUR PROJECTS--------*/
