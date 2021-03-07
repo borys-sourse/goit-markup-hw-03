@@ -1,10 +1,10 @@
 /* --БАЗОВОЙ СБРОС-- */
 :root {
-    --main-font: "Roboto", sans-serif;
-    --secondary-font: "Raleway", sans-serif;
-    --accent-color:#2196f3;
-    --saction-pt: 47px;
-    --saction-pb: 47px;
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --accent-color: #2196f3;
+  --saction-pt: 47px;
+  --saction-pb: 47px;
 }
 
 body {
@@ -40,7 +40,7 @@ img {
 .address {
   font-style: normal;
 }
-  
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -59,18 +59,17 @@ img {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: var(--saction-pt);
-  padding-bottom: var(--saction-pb);
-  /* text-align: center; */
-
+  /* padding-top: var(--saction-pt); */
+  /* padding-bottom: var(--saction-pb); */
+  text-align: center;
 }
 
 .section {
-  /* padding-top: var(--saction-pt); */
-  /* padding-bottom: var(--saction-pb); */
+  padding-top: var(--saction-pt);
+  padding-bottom: var(--saction-pb);
 }
 /*---------HEADER--------*/
-.header { 
+.header {
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -78,7 +77,7 @@ img {
 .header .container {
   display: flex;
   align-items: center;
-} 
+}
 
 .navigation {
   display: flex;
@@ -102,8 +101,8 @@ img {
 .navigation-item:not(:last-child) {
   margin-right: 50px;
 }
-.active-link{
-   color: #2196f3; 
+.active-link {
+  color: #2196f3;
 }
 .navigation-link:hover,
 .navigation-link:focus {
@@ -111,14 +110,13 @@ img {
 }
 /*--------- END HEADER--------*/
 
-
 /*---------HERO--------*/
 .hero {
   padding-top: 200px;
-  padding-bottom: 200px; 
+  padding-bottom: 200px;
   /* height: 600px; */
-  background: #2F303A;
-  text-align: center; 
+  background: #2f303a;
+  text-align: center;
 }
 
 .modal-btn {
@@ -129,24 +127,24 @@ img {
 
   color: #ffffff;
   background: #2196f3;
-  rgba(0, 0, 0, 0.15);
-
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   min-width: 200px;
   /* height: 50px; */
-  border-radius: 4px;
+  /* border-radius: 4px; */
+  border: none;
   padding: 10px 32px;
 }
 
-.hero-title{
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
 
-  color: #FFFFFF;
+  color: #ffffff;
   /* background: #2F303A; */
-  
+
   margin-bottom: 30px;
-  width: 696px; 
+  width: 696px;
   /* height: 120px;   */
   margin-left: auto;
   margin-right: auto;
@@ -157,17 +155,17 @@ img {
 
 .features-list {
   display: flex;
-  margin-left: -30px; 
+  margin-left: -30px;
   margin-top: -30px;
-  flex-basis: calc(100%/4 - 30px);
 }
 
 .features-list-item {
   margin-left: 30px;
   margin-top: 30px;
+  flex-basis: calc(100% / 4 - 30px);
 }
 
-.titles-list{
+.titles-list {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -178,14 +176,13 @@ img {
 
   margin-bottom: 10px;
 }
-.titles-list-description{
+.titles-list-description {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 
   color: #757575;
-
 }
 /*---------END features--------*/
 
@@ -199,13 +196,13 @@ img {
 .about-list-item {
   margin-left: 30px;
   margin-top: 30px;
-  flex-basis: calc(100%/3 - 30px)
+  flex-basis: calc(100% / 3 - 30px);
 }
 
 /*--------- END ABOUT--------*/
 
 /*---------TEAM--------*/
-.team-title{
+.team-title {
   font-style: normal;
   font-size: 16px;
   font-weight: 500;
@@ -220,14 +217,14 @@ img {
 
 .team-list {
   display: flex;
-  margin: left -30px;
+  margin-left: -30px;
   margin-top: -30px;
-  flex-basis: calc(100%/4 -30px);
 }
 
 .team-list-item {
   margin-left: 30px;
   margin-top: 30px;
+  flex-basis: calc(100% / 4 - 30px);
 }
 
 .team-container {
@@ -235,7 +232,7 @@ img {
   padding-bottom: 30px;
 }
 
-.team-title-description{
+.team-title-description {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
@@ -250,7 +247,8 @@ img {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background: #2F303A;
+  background: #2f303a;
+  padding-left: 215px;
 }
 
 .contact-address {
@@ -259,7 +257,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   /* margin-top: 20px; */
-  color: #FFFFFF;
+  color: #ffffff;
 
   margin-left: auto;
   margin-right: 50px;
@@ -276,23 +274,23 @@ img {
 }
 /*--------- END FOOTER--------*/
 
-.logo{
+.logo {
   font-family: var(--secondary-font);
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 
-  color: #2196F3;
+  color: #2196f3;
 
   margin-right: 93px;
   /* margin-bottom: 20px;  */
 }
-.logo-light-theme{
+.logo-light-theme {
   color: #212121;
 }
-.logo-dark-theme{
-  color: #FFFFFF; 
+.logo-dark-theme {
+  color: #ffffff;
 }
 
 .contact-link {
@@ -306,45 +304,43 @@ img {
   margin-left: auto;
   margin-right: 50px;
   margin-bottom: 9px;
-
 }
 .contact-link:hover,
 .contact-link:focus {
   color: #2196f3;
 }
 
-.tel-link { 
+.tel-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  color: #757575; 
+  color: #757575;
 
   margin-right: 50px;
-  margin-bottom: 9px; 
+  margin-bottom: 9px;
 }
 
 .tel-link:hover,
-.tel-link:focus { 
-
+.tel-link:focus {
   color: #2196f3;
 }
 
-.title{
-font-weight: bold;
-font-size: 36px;
-line-height: 1.17;
+.title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
 
-color: #212121;
+  color: #212121;
 
-margin-bottom: 50px;
-text-align: center;
+  margin-bottom: 50px;
+  text-align: center;
 }
 /*-------PORTFOLIO---------*/
 /*---------FILTERS--------*/
 .filters {
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
 }
 
 .filters-box {
@@ -357,14 +353,14 @@ text-align: center;
 .filters-list {
   display: flex;
   margin-left: -30px;
-  flex-basis: calc(100%/5 - 30px);
+  flex-basis: calc(100% / 5 - 30px);
   justify-content: center;
 }
 .filters-list-item {
   margin-left: 30px;
 }
 
-.filters-btn{
+.filters-btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -372,15 +368,15 @@ text-align: center;
 
   color: #212121;
 
-   min-width: 73px;
+  min-width: 73px;
   /* height: 50px; */
   border-radius: 4px;
   padding: 6px 22px;
 }
 .filters-btn:hover,
 .filters-btn:focus {
-  color: #FFFFFF;
-  background: #2196F3;
+  color: #ffffff;
+  background: #2196f3;
   cursor: pointer;
 }
 /*--------- END FILTERS--------*/
@@ -390,7 +386,7 @@ text-align: center;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
-  flex-basis: calc(100%/3 - 30px);
+  flex-basis: calc(100% / 3 - 30px);
 }
 
 .projects-list-item {
@@ -401,6 +397,8 @@ text-align: center;
 .project-container {
   padding-top: 20px;
   padding-bottom: 20px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
 }
 
 .project-title {
