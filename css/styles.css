@@ -204,6 +204,12 @@ img {
 /*--------- END ABOUT--------*/
 
 /*---------TEAM--------*/
+
+.team {
+  padding-bottom: 94px;
+  background: #f5f4fa;
+}
+
 .team-title {
   font-style: normal;
   font-size: 16px;
